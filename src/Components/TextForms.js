@@ -31,6 +31,13 @@ export default function TextForms(props) {
       setText(newText);
     }
 
+    const handleCopy=()=>{
+      console.log("I am copy");
+      var text = document.getElementById("mybox")
+      text.select();
+      navigator.clipboard.writeText(text.value);
+      alert("Text Copied");
+    }
     
     
 
@@ -55,8 +62,9 @@ export default function TextForms(props) {
         </div>
         <button className="btn-btn-primary mx-3" onClick={handleUpClick}> Convert To UpperCase</button>
         <button className="btn-btn-primary mx-3" onClick={handleLoClick}> Convert To LowerCase</button>
-        <button className="btn-btn-primary mx-3" onClick={handleClearClick}> Clear All</button>
+        <button className="btn-btn-primary mx-3" onClick={handleCopy}> Copy Text </button>
         <button className="btn-btn-primary mx-3" onClick={handleReClick}> Reverse the text</button>
+        <button className="btn-btn-primary mx-3" onClick={handleClearClick}> Clear All</button>
     </div>
 
     
