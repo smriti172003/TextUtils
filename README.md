@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-Hi everyone,TextUtil Website is a very basic website which requires the use of react.js  i.e it helps the user to analyse there text!
+Hi everyone,TextUtil Website is a very basic website which requires the use of react.js  i.e it helps the user to analyse there text in simple way and can play with the text as well!
 
 The website looks like:
 
